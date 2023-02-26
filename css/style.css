@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+.ax-text{
+    color: #ff6200;
+}
+.text-small{
+    font-size: 0.8rem;
+    color: #6d6d6d;
+}
+.theme-text-green{
+    color: #86bc42;
+}
+a.theme-text-green:hover{
+    color: #669131;
+}
+.text-justify{
+    text-align: justify;
+}
+/* Styling of upper navigation bar starts from here */
+
+/* Styling of upper navigation bar ends here */
+/* Bootstrap outline none starts here */
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    outline: none!important;
+    box-shadow: none;
+}
+
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+    outline: none!important;
+    box-shadow: none;
+}
+/* Bootstrap outline none ends here */
+/* styling for slide starts here */
+
+.slider-text{
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* styling for slide ends here */
+/* styling of cards under slider starts here */
+.icon-bottom{
+    fill: #86bc42;
+    transition: all 0.4s ease;
+}
+.icon-bottom:hover{
+    fill: black;
+}
+/* styling of cards under slider ends here */
+/* styling for trending offers cards starts here */
+.section-title{
+    border-bottom: 3px solid #86bc42;
+    width: 15%;
+    margin: auto;
+}
+/* styling for trending offers cards ends here */
+/* Styling for owner section starts here */
+.des_dev:after{
+    content: "";
+    border-right: 2px solid #86bc42;
+}
+/* Styling for owner section ends here */
+/* styling for logo slider starts here */
+.logo-slider-bg{
+    background-color: #f5f5f5;
+}
+/* styling for logo slider ends here */
+/* styling for newsletter starts here */
+.news-letter-border{
+    border: 1px solid #6d6d6d;
+    border-radius: 500px;
+}
+div.input-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* styling for newsletter ends here */
+/* styling for product page starts here */
+.product-image{
+    height: 509px;
+    width: 100%;
+    object-fit: contain;
+}
+.prod-scnd-img{
+    height: 102px;
+    width: 90px;
+    object-fit: contain;
+}
+.qty-label{
+    align-items: center;
+}
+nav > .nav-tabs > .active{
+    color: #86bc42 !important;
+    font-weight: 800 !important;
+}
+nav > .nav-tabs > .nav-link {
+    color: #000;
+}
+.pointer:hover{
+    cursor: pointer;
+}
+/* styling for product page ends here */
+/* styling for category page starts here */
+.side-cat > li > a {
+    display: block;
+    line-height: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+/* styling for category page ends here */
+/* styling for cart page starts here */
+.cart-prod-img{
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+}
+/* styling for cart page ends here */
+/* styling for registration page starts here */
+.default-add{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* styling for registration page ends here */
+/* styling for my account page starts here */
+.myacc-icons{
+    width: 52px;
+    height: 52px;
+}
+.icon-brdr{
+    border-right: 1px solid #eee;
+    padding-right: 1.5rem;
+    margin-right: 1.5rem;
+}
+/* styling for my account page ends here */
+@media (max-width: 575.98px) {
+    .sbr-0{
+        border-right: 0px !important;
+    }
+    .news-letter-border{
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .sbr-0{
+        border-right: 0px !important;
+    }
+    .news-letter-border{
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .sbr-md-0{
+        border-right: 0px !important;
+    }
+    .sbr-md-1{
+        border-right: 1px solid #dee2e6;
+    }
+    .news-letter-border{
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .sbr-lg-1{
+        border-right: 1px solid #dee2e6;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sbr-lg-1{
+        border-right: 1px solid #dee2e6;
+    }
+}

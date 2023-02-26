@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Slick Slider Link -->
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
+
+    <title>Dove Shampoo | 10onten Store</title>
+  </head>
+  <body>
+    
+        <div class="container my-5">
+            <nav class="logo-slider-bg p-3 mb-4 rounded-3" style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                <ol class="breadcrumb m-0">
+                <li class="breadcrumb-item"><a href="index.html" class="text-success"><i class="bi bi-house-fill"></i></a></li>
+                <li class="breadcrumb-item active" aria-current="page">Dove Shampoo</li>
+                </ol>
+            </nav>
+            <div class="row g-0 g-lg-5">
+                <div class="col-lg-4">
+                    <img src="./images/dove.jpg" class="product-image border rounded-3" alt="">
+                    <img src="./images/dove.jpg" class="prod-scnd-img border rounded-3 mt-3" alt="">
+                    <img src="./images/dove.jpg" class="prod-scnd-img border rounded-3 mt-3 ms-3" alt="">
+                </div>
+                <div class="col-lg-8 mt-3 mt-lg-5">
+                    <p class="fs-4 fw-bolder">Dove Shampoo</p>
+                    <div class="dropdown-divider my-3"></div>
+                    <div class="row">
+                        <div class="col-lg-2 col-4">
+                            <p class="fw-bold m-0">Brand:</p>
+                        </div>
+                        <div class="col-lg-10 col-8">
+                            <p class="text-secondary">DOVE</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-4">
+                            <p class="fw-bold m-0">Product Code:</p>
+                        </div>
+                        <div class="col-lg-10 col-8">
+                            <p class="text-secondary">Product 11</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2 col-4">
+                            <p class="fw-bold m-0">Availability:</p>
+                        </div>
+                        <div class="col-lg-10 col-8">
+                            <p class="theme-text-green">In Stock</p>
+                            <!-- <p class="text-danger">Out Of Stock</p> -->
+                        </div>
+                    </div>
+                    <div class="dropdown-divider my-3"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <span class="fw-bolder fs-3">$119.60</span>
+                            <span class="text-decoration-line-through text-secondary ms-2">$123.20</span>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider mt-3 mb-4"></div>
+                    <div class="row">
+                        <div class="col-2 d-flex qty-label">
+                            <p class="m-0">Qty:</p>
+                        </div>
+                        <div class="col-10 d-flex">
+                            <button class="btn btn-danger rounded-0" id="minus-button" onclick="minus();">
+                                <i class="bi bi-dash"></i>
+                            </button>
+                            <input id="qty" type="text" onkeyup="numbersonly(this)" class="form-control w-25 rounded-0 text-center" readonly>
+                            <button class="btn btn-success rounded-0" onclick="add()">
+                                <i class="bi bi-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider mt-4 mb-3"></div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-success rounded-3" name="submit">Add To Cart</button>
+                            <button type="submit" class="btn btn-success rounded-3" name="submit"><i class="bi bi-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider my-3"></div>
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-center justify-content-lg-start">
+                            <span class="text-warning pe-3 me-3 border-end">
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </span>
+                            <span class="pe-3 me-3 border-end">
+                                0 Reviews
+                            </span>
+                            <span>
+                                <a href="#" class="text-decoration-none text-dark">
+                                    Write A Review
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mt-5">
+                    <div class="row">
+                        <div class="col-md-12 mt-3">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-home-tab descBtn" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Description</button>
+                                <button class="nav-link" id="nav-profile-tab reviBtn" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Review (0)</button>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    <p class="text-secondary text-justify my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+                                        itaque eaque suscipit qui commodi vel eius placeat a ipsam. Reiciendis sit quisquam modi nemo ratione
+                                        incidunt officiis eaque quas a!
+                                        Iusto dignissimos voluptatum hic beatae ratione voluptate. Veritatis iure dolore distinctio a odio quae
+                                        eos, aliquam quidem commodi sint id recusandae amet excepturi fugiat qui iste enim ipsa totam nihil?
+                                        Placeat iure dignissimos blanditiis consequatur, rerum temporibus deserunt officia et error laborum esse
+                                        nihil quia saepe provident consectetur vitae accusamus voluptas nobis ipsam ducimus ullam! Earum ad
+                                        corrupti quasi fugit!</p>
+                                </div>
+                                <div class="tab-pane fade my-3" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                    <form action="" method="POST">
+                                        <label for="yname" class="form-label mb-2"><span class="text-danger">*</span>Your Name</label>
+                                        <input type="text" class="form-control mb-2" name="yourName" id="yname">
+                                        <label for="message" class="form-label mb-2"><span class="text-danger">*</span>Your Message</label>
+                                        <textarea name="message" id="message" class="form-control mb-2" cols="30" rows="10"></textarea>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <span><span class="text-danger">*</span>Rating:</span>
+                                                <span class="text-warning pe-3 ms-2">
+                                                    <i class="bi bi-star mx-2"></i>
+                                                    <i class="bi bi-star mx-2"></i>
+                                                    <i class="bi bi-star mx-2"></i>
+                                                    <i class="bi bi-star mx-2"></i>
+                                                    <i class="bi bi-star mx-2"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="text-end">
+                                            <input type="submit" class="btn btn-outline-success mt-3" value="Continue">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="row">
+                        <div class="col-md-12 text-center mt-5">
+                            <div class="col-md-12 text-center mb-5">
+                                <p class="fs-2 fw-bold mb-2">On Sale</p>
+                                <div class="section-title text-center"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="">
+                                <div class="border position-relative rounded-3">
+                                    <a href="#">
+                                        <img src="./images/prod-1.jpg" class="img-fluid rounded-3" alt="">
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <div class="btn-grp mt-3 mb-2">
+                                        <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="ADD TO CART"
+                                            class="btn btn-outline-success">
+                                            <i class="bi bi-bag-plus"></i>
+                                        </button>
+                                        <button type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="ADD TO WISHLIST" class="btn btn-outline-success">
+                                            <i class="bi bi-heart"></i>
+                                        </button>
+                                    </div>
+                                    <p class="fw-bold fs-5 mb-1"><a href="#" class="text-decoration-none text-dark">Dove Shampoo</a>
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <span class="fw-bold">
+                                                $119.60
+                                            </span>
+                                            <span class="text-small">
+                                                <s>$220.50</s>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="">
+                                <div class="border position-relative rounded-3">
+                                    <a href="#">
+                                        <img src="./images/prod-1.jpg" class="img-fluid rounded-3" alt="">
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <div class="btn-grp mt-3 mb-2">
+                                        <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="ADD TO CART"
+                                            class="btn btn-outline-success">
+                                            <i class="bi bi-bag-plus"></i>
+                                        </button>
+                                        <button type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="ADD TO WISHLIST" class="btn btn-outline-success">
+                                            <i class="bi bi-heart"></i>
+                                        </button>
+                                    </div>
+                                    <p class="fw-bold fs-5 mb-1"><a href="#" class="text-decoration-none text-dark">Dove Shampoo</a>
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <span class="fw-bold">
+                                                $119.60
+                                            </span>
+                                            <span class="text-small">
+                                                <s>$220.50</s>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="">
+                                <div class="border position-relative rounded-3">
+                                    <a href="#">
+                                        <img src="./images/prod-1.jpg" class="img-fluid rounded-3" alt="">
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <div class="btn-grp mt-3 mb-2">
+                                        <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="ADD TO CART"
+                                            class="btn btn-outline-success">
+                                            <i class="bi bi-bag-plus"></i>
+                                        </button>
+                                        <button type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="ADD TO WISHLIST" class="btn btn-outline-success">
+                                            <i class="bi bi-heart"></i>
+                                        </button>
+                                    </div>
+                                    <p class="fw-bold fs-5 mb-1"><a href="#" class="text-decoration-none text-dark">Dove Shampoo</a>
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <span class="fw-bold">
+                                                $119.60
+                                            </span>
+                                            <span class="text-small">
+                                                <s>$220.50</s>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="">
+                                <div class="border position-relative rounded-3">
+                                    <a href="#">
+                                        <img src="./images/prod-1.jpg" class="img-fluid rounded-3" alt="">
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <div class="btn-grp mt-3 mb-2">
+                                        <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="ADD TO CART"
+                                            class="btn btn-outline-success">
+                                            <i class="bi bi-bag-plus"></i>
+                                        </button>
+                                        <button type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="ADD TO WISHLIST" class="btn btn-outline-success">
+                                            <i class="bi bi-heart"></i>
+                                        </button>
+                                    </div>
+                                    <p class="fw-bold fs-5 mb-1"><a href="#" class="text-decoration-none text-dark">Dove Shampoo</a>
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <span class="fw-bold">
+                                                $119.60
+                                            </span>
+                                            <span class="text-small">
+                                                <s>$220.50</s>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="">
+                                <div class="border position-relative rounded-3">
+                                    <a href="#">
+                                        <img src="./images/prod-1.jpg" class="img-fluid rounded-3" alt="">
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <div class="btn-grp mt-3 mb-2">
+                                        <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="ADD TO CART"
+                                            class="btn btn-outline-success">
+                                            <i class="bi bi-bag-plus"></i>
+                                        </button>
+                                        <button type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="ADD TO WISHLIST" class="btn btn-outline-success">
+                                            <i class="bi bi-heart"></i>
+                                        </button>
+                                    </div>
+                                    <p class="fw-bold fs-5 mb-1"><a href="#" class="text-decoration-none text-dark">Dove Shampoo</a>
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <span class="fw-bold">
+                                                $119.60
+                                            </span>
+                                            <span class="text-small">
+                                                <s>$220.50</s>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="">
+                                <div class="border position-relative rounded-3">
+                                    <a href="#">
+                                        <img src="./images/prod-1.jpg" class="img-fluid rounded-3" alt="">
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <div class="btn-grp mt-3 mb-2">
+                                        <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="ADD TO CART"
+                                            class="btn btn-outline-success">
+                                            <i class="bi bi-bag-plus"></i>
+                                        </button>
+                                        <button type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                                            title="ADD TO WISHLIST" class="btn btn-outline-success">
+                                            <i class="bi bi-heart"></i>
+                                        </button>
+                                    </div>
+                                    <p class="fw-bold fs-5 mb-1"><a href="#" class="text-decoration-none text-dark">Dove Shampoo</a>
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12">
+                                            <span class="fw-bold">
+                                                $119.60
+                                            </span>
+                                            <span class="text-small">
+                                                <s>$220.50</s>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!-- Slick JS Link -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./slick-1.8.1/slick/slick.js"></script>
+
+    <!-- JS Link -->
+    <script src="./js/script.js"></script>
+
+  </body>
+</html>
